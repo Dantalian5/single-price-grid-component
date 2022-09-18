@@ -116,6 +116,10 @@ body .attribution a {
   color: hsl(0deg, 0%, 100%);
   margin-top: 1.2rem;
 }
+.container .container_price a:active {
+  transform: scale(0.95);
+  box-shadow: 0px 10px 1rem -0.4rem rgba(0, 0, 0, 0.2);
+}
 .container .container_text2 {
   width: 100%;
   height: 100%;
@@ -141,9 +145,5 @@ body .attribution a {
   .container {
     width: 39.75rem;
     grid-template: "top-full top-full" 13.5rem "bottom-left bottom-right" 16rem/1fr 1fr;
-  }
-  .container .container_price a:active {
-    transform: scale(0.95);
-    box-shadow: 0px 10px 1rem -0.4rem rgba(0, 0, 0, 0.2);
   }
 }/*# sourceMappingURL=style.css.map */

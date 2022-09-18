@@ -123,7 +123,10 @@ body{
                 font: 700 1rem $font-family;
                 color: $color-n-White;
                 margin-top: 1.2rem;
-
+            }
+            a:active{
+                transform: scale(0.95);
+                box-shadow: 0px 10px 1rem -0.4rem rgba(0, 0, 0, 0.20);
             }
         }
         .container_text2{
@@ -156,13 +159,6 @@ body{
         grid-template:
         "top-full top-full" 13.5rem
         "bottom-left bottom-right" 16rem / 1fr 1fr;
-
-        .container_price{
-            a:active{
-                transform: scale(0.95);
-                box-shadow: 0px 10px 1rem -0.4rem rgba(0, 0, 0, 0.20);
-            }
-        }
     }
 }
 
