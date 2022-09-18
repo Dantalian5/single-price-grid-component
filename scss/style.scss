@@ -34,8 +34,8 @@ body{
 }
 
 .container{
-    width: 100%;
-    max-width: 90rem;
+    width: 20rem;
+    height: auto;
     background: $color-n-Light-Gray;
     /*grid config*/
     display: grid;
@@ -148,5 +148,21 @@ body{
             }
 
         }
+}
+
+@media only screen and (min-width: 62.5rem) {
+    .container{
+        width: 39.75rem;
+        grid-template:
+        "top-full top-full" 13.5rem
+        "bottom-left bottom-right" 16rem / 1fr 1fr;
+
+        .container_price{
+            a:active{
+                transform: scale(0.95);
+                box-shadow: 0px 10px 1rem -0.4rem rgba(0, 0, 0, 0.20);
+            }
+        }
+    }
 }
 

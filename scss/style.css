@@ -30,8 +30,8 @@ body .attribution a {
 }
 
 .container {
-  width: 100%;
-  max-width: 90rem;
+  width: 20rem;
+  height: auto;
   background: hsl(204deg, 43%, 93%);
   /*grid config*/
   display: grid;
@@ -135,4 +135,15 @@ body .attribution a {
 .container .container_text2 p {
   font: 400 0.8rem "Karla", sans-serif;
   color: hsl(204deg, 43%, 93%);
+}
+
+@media only screen and (min-width: 62.5rem) {
+  .container {
+    width: 39.75rem;
+    grid-template: "top-full top-full" 13.5rem "bottom-left bottom-right" 16rem/1fr 1fr;
+  }
+  .container .container_price a:active {
+    transform: scale(0.95);
+    box-shadow: 0px 10px 1rem -0.4rem rgba(0, 0, 0, 0.2);
+  }
 }/*# sourceMappingURL=style.css.map */
